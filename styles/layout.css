@@ -1,0 +1,90 @@
+* {
+	font-family: "Lato", sans-serif;
+	user-select: none;
+}
+
+#content{
+	overflow-y: auto;
+	height: 75vh;
+}
+
+.column {
+	float: left;
+}
+
+.left {
+	width: 70%;
+
+}
+
+.right {
+	width: 30%;
+}
+
+.Album{
+	float: left;
+	text-align: center;
+}
+
+.arrow{
+	width: 10%;
+	padding-top: 20%;
+}
+
+#arrow:hover{
+	cursor: pointer;
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
+
+.info{
+	width: 80%;
+}
+
+.icon{
+	height: 2em;
+	width: auto;
+}
+
+.albumart{
+	height: 40%;
+	width: 40%;
+	box-shadow: 10px 10px 5px grey;
+}
+
+#overlay{
+	top: 14em;
+	right: 55%;
+	position: absolute;
+	height: 40%;
+	width: auto;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+#overlay:hover{
+	opacity: .75;
+	cursor: pointer;
+}
+
+.indicator{
+	position: absolute;
+	bottom: 1em;
+	float: left;
+	height: 1%;
+	width: 70%;
+	padding-top: 5%;
+}
+
+.indi{
+	display: inline-block;
+	background-color: black;
+	margin-left: 10px;
+	height: 100%;
+}
+
+.indi:hover{
+	cursor: pointer;
+}
+
