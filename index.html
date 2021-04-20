@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Avicii Discography v2.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		
+		<!-- DATA FILES -->
+		<script src="data/SONGS.js"></script>
+		<script src="data/UNRELEASED.js"></script>
+		<script src="data/ALIASES.js"></script>
+		<script src="data/ALBUMS.js"></script>
+		<script src="data/ARTISTS.js"></script>
+		<script src="data/EPs.js"></script>
+		<script src="data/REMIXES.js"></script>
+		
+		<!-- FUNCTIONS -->		
+		<script src="functions/main.js"></script>
+		<script src="functions/songs.js"></script>
+		<script src="functions/unreleased.js"></script>
+		<script src="functions/albums.js"></script>
+		<script src="functions/EPs.js"></script>
+		<script src="functions/remixes.js"></script>
+		
+		<!-- STYLE SHEETS -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/layout.css">
+		<link rel="stylesheet" href="styles/navbar.css">
+
+	</head>
+	<body>
+
+		<div class="title">
+			<h1>Avicii Discography</h1>
+		</div>
+		<div class="navbar">
+			<span id="songs" class="navitem unselected" onclick=navigate(this)>Official Songs</span>
+			<span id="remixes" class="navitem unselected" onclick=navigate(this)>Official Remixes</span>
+			<span id="unreleased" class="navitem unselected" onclick=navigate(this)>Unreleased Songs</span>
+			<span id="albums" class="navitem unselected" onclick=navigate(this)>Albums</span>
+			<span id="EPs" class="navitem unselected" onclick=navigate(this)>EPs</span>
+		</div>
+		<div class="mainview" id="mainview">	
+			<div class="column left" id="content">
+				As there is no straightforward way to 
+				listen to the complete collection of the music
+				that Tim Bergling has made, I created one.
+				<br>
+				I hope you enjoy it.
+				<br>
+				For suggestions or remarks, please send a 
+				message to
+				aviciidiscography (at) gmail (dot) com
+			</div>
+			
+			<div class="column right" id="media">
+				Select media to play here.
+			</div>
+		</div>
+	</body>
+</html>
