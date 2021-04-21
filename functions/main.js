@@ -44,6 +44,9 @@ function playSpotify(id){
 	else if (TYPE=="EPs"){
 		embedding = EPs[id][4]
 	}
+	else if (TYPE=="produced"){
+		embedding = PRODUCED[id][4]
+	}
 	embedding=embedding.replace("300", "100%");
 
 	document.getElementById("media").innerHTML=embedding;
@@ -59,6 +62,9 @@ function playYouTube(id){
 	}
 	else if (TYPE=="unreleased"){
 		YTID = UNRELEASED[id][7];
+	}
+	else if (TYPE=="produced"){
+		YTID = PRODUCED[id][5]
 	}
 	var embedding="<iframe src=\"https://www.youtube.com/embed/"+YTID+"?autoplay=1\"frameborder=\"0\"></iframe>";
 	document.getElementById("media").innerHTML=embedding;
@@ -87,6 +93,9 @@ function tablemaker(TYPE){
 		case "remixes":
 			google.charts.setOnLoadCallback(remixtable);
 			break;
+		case "produced":
+			google.charts.setOnLoadCallback(producedtable);
+			break;
 	}
 	
 }
@@ -105,6 +114,7 @@ function navigate(elem){
 		case "songs":
 		case "unreleased":
 		case "remixes":
+		case "produced":
 			tablemaker(TYPE);
 			break;
 		case "albums":
